@@ -3,15 +3,14 @@
 class TalkMailer < ApplicationMailer
   before_action :set_attachment
 
-  default from: 'marco.fornaciari@rebase.com.br',
-          subject: 'E-mail da banana'
+  default subject: 'E-mail da banana'
 
   def gmail_mail
-    mail to: 'marco.fornaciari@rebase.com.br'
+    mail to: ENV.fetch('GMAIL_ADDRESS')
   end
 
   def outlook_mail
-    mail to: 'marco.fornaciari.rebase@outlook.com'
+    mail to: ENV.fetch('OUTLOOK_ADDRESS')
   end
 
   private
