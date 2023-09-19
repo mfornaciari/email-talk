@@ -13,6 +13,11 @@ class TalkMailer < ApplicationMailer
     mail to: params[:recipient]
   end
 
+  def table_mail
+    attach('banana.png')
+    mail to: params[:recipient]
+  end
+
   private
 
   def attach(filename)
