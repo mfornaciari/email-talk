@@ -24,7 +24,7 @@ docker compose up
 docker-compose up
 ```
 
-3. Em um segundo terminal, acesse o container:
+4. Em um segundo terminal, acesse o container:
 
 ```bash
 docker compose exec -it app bash
@@ -32,13 +32,13 @@ docker compose exec -it app bash
 docker-compose exec -it id_do_container bash
 ```
 
-4. Dentro do container, acesse o console Rails:
+5. Dentro do container, acesse o console Rails:
 
 ```bash
 rails c
 ```
 
-5. Use o `TalkMailer` para enviar os e-mails que desejar:
+6. Use o `TalkMailer` para enviar os e-mails que desejar:
 
 ```ruby
 TalkMailer.with(recipient: 'endereco@email.com').svg_mail.deliver_now
