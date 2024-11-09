@@ -14,8 +14,8 @@ em ambos (em 05/10/23).
 
 ## Como usar
 
-1 - Clone o repositório e acesse o seu diretório.
-2 - Certifique-se de ter o Docker instalado na sua máquina e execute:
+1. Clone o repositório e acesse o seu diretório.
+2. Certifique-se de ter o Docker instalado na sua máquina e execute:
 
 ```bash
 docker compose up
@@ -23,7 +23,7 @@ docker compose up
 docker-compose up
 ```
 
-3 - Em um segundo terminal, acesse o container:
+3. Em um segundo terminal, acesse o container:
 
 ```bash
 docker compose exec -it app bash
@@ -31,13 +31,13 @@ docker compose exec -it app bash
 docker-compose exec -it id_do_container bash
 ```
 
-4 - Dentro do container, acesse o console Rails:
+4. Dentro do container, acesse o console Rails:
 
 ```bash
 rails c
 ```
 
-5 - Use o `TalkMailer` para enviar os e-mails que desejar:
+5. Use o `TalkMailer` para enviar os e-mails que desejar:
 
 ```ruby
 TalkMailer.with(recipient: 'endereco@email.com').svg_mail.deliver_now
