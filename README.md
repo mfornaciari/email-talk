@@ -15,7 +15,8 @@ em ambos (em 05/10/23).
 ## Como usar
 
 1. Clone o repositório e acesse o seu diretório.
-2. Certifique-se de ter o Docker instalado na sua máquina e execute:
+2. Crie um arquivo `.env` seguindo o exemplo fornecido em `.env.example`.
+3. Certifique-se de ter o Docker instalado na sua máquina e execute:
 
 ```bash
 docker compose up
